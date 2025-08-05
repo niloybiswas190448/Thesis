@@ -1,0 +1,407 @@
+{
+  "metadata": {
+    "analysis_date": "2025-08-05T15:45:38.076541",
+    "total_observations": 500,
+    "income_groups": [
+      "Low",
+      "Mid",
+      "High"
+    ],
+    "transport_modes": [
+      "Bus",
+      "MRT",
+      "Leguna"
+    ],
+    "analysis_version": "enhanced_1.0"
+  },
+  "results": {
+    "objective_1": {
+      "mode_choice_analysis": {
+        "Low": {
+          "total_respondents": 246,
+          "mode_distribution": {
+            "Bus": 106,
+            "MRT": 66,
+            "Leguna": 74
+          },
+          "mode_percentages": {
+            "Bus": 43.08943089430895,
+            "MRT": 26.82926829268293,
+            "Leguna": 30.081300813008134
+          }
+        },
+        "Mid": {
+          "total_respondents": 152,
+          "mode_distribution": {
+            "Leguna": 43,
+            "MRT": 38,
+            "Bus": 71
+          },
+          "mode_percentages": {
+            "Leguna": 28.289473684210524,
+            "MRT": 25.0,
+            "Bus": 46.71052631578947
+          }
+        },
+        "High": {
+          "total_respondents": 102,
+          "mode_distribution": {
+            "Bus": 39,
+            "MRT": 26,
+            "Leguna": 37
+          },
+          "mode_percentages": {
+            "Bus": 38.23529411764706,
+            "MRT": 25.49019607843137,
+            "Leguna": 36.27450980392157
+          }
+        }
+      },
+      "discrete_choice_modeling": {
+        "utility_parameters": {
+          "fare_coefficient": -0.02,
+          "time_coefficient": -0.01,
+          "comfort_coefficient": 0.1,
+          "income_coefficient": 0.005
+        },
+        "choice_probabilities": {
+          "Low": {
+            "Bus": 0.38745019815815135,
+            "MRT": 0.27378618852188524,
+            "Leguna": 0.33876361331996335
+          },
+          "Mid": {
+            "Bus": 0.39157464049430063,
+            "MRT": 0.2818166431931603,
+            "Leguna": 0.32660871631253907
+          },
+          "High": {
+            "Bus": 0.37314395415151147,
+            "MRT": 0.2625499440781021,
+            "Leguna": 0.3643061017703864
+          }
+        }
+      },
+      "wtp_analysis": {
+        "Low": {
+          "mean_wtp": 48.13972604123447,
+          "median_wtp": 48.80128876772189,
+          "min_wtp": 10.0,
+          "max_wtp": 88.57992976242454,
+          "mean_affordability_ratio": 1.0820062356539748,
+          "unaffordable_trips": 109,
+          "unaffordable_percentage": 44.3089430894309,
+          "fare_elasticity": 0.0
+        },
+        "Mid": {
+          "mean_wtp": 81.193859823098,
+          "median_wtp": 82.0705686966881,
+          "min_wtp": 21.71488020366118,
+          "max_wtp": 142.2582040208768,
+          "mean_affordability_ratio": 0.5906814780445415,
+          "unaffordable_trips": 20,
+          "unaffordable_percentage": 13.157894736842104,
+          "fare_elasticity": 0.0
+        },
+        "High": {
+          "mean_wtp": 117.50531135038975,
+          "median_wtp": 117.05766512032525,
+          "min_wtp": 59.479836056327656,
+          "max_wtp": 207.54520665180277,
+          "mean_affordability_ratio": 0.4097615999458419,
+          "unaffordable_trips": 2,
+          "unaffordable_percentage": 1.9607843137254901,
+          "fare_elasticity": 0.0
+        }
+      },
+      "cvm_analysis": {
+        "Low": {
+          "wtp_fare_improvement": 47.96373305227906,
+          "wtp_comfort_improvement": 45.79721148612115,
+          "fare_improvement_acceptance_rate": 0.7642276422764228,
+          "comfort_improvement_acceptance_rate": 0.3130081300813008
+        },
+        "Mid": {
+          "wtp_fare_improvement": 80.38253067687837,
+          "wtp_comfort_improvement": 81.4489825885499,
+          "fare_improvement_acceptance_rate": 0.625,
+          "comfort_improvement_acceptance_rate": 0.5855263157894737
+        },
+        "High": {
+          "wtp_fare_improvement": 116.89876106349477,
+          "wtp_comfort_improvement": 117.68718498349853,
+          "fare_improvement_acceptance_rate": 0.4117647058823529,
+          "comfort_improvement_acceptance_rate": 0.8333333333333334
+        }
+      }
+    },
+    "objective_2": {
+      "welfare_optimization": {
+        "Bus": {
+          "max_r": {
+            "optimal_price": 79.63278156083733,
+            "revenue": 12208.586410912783,
+            "demand": 153.31106325333803,
+            "profit": 8518.333591493301,
+            "social_welfare": 5489.251068886479
+          },
+          "max_p": {
+            "optimal_price": 79.63278156083733,
+            "revenue": 12208.586410912783,
+            "demand": 153.31106325333803,
+            "profit": 8518.333591493301,
+            "social_welfare": 5489.251068886479
+          },
+          "max_d": {
+            "optimal_price": 20.05863515386331,
+            "revenue": 6127.313877494042,
+            "demand": 305.47012947258855,
+            "profit": -1225.4627754988078,
+            "social_welfare": 1838.194163248213
+          },
+          "max_b": {
+            "optimal_price": 20.05863515386331,
+            "revenue": 6127.313877494042,
+            "demand": 305.47012947258855,
+            "profit": -1225.4627754988078,
+            "social_welfare": 1838.194163248213
+          },
+          "max_s": {
+            "optimal_price": 79.63278156083733,
+            "revenue": 12208.586410912783,
+            "demand": 153.31106325333803,
+            "profit": 8518.333591493301,
+            "social_welfare": 5489.251068886479
+          }
+        },
+        "MRT": {
+          "max_r": {
+            "optimal_price": 153.26490715648166,
+            "revenue": 14141.83686956465,
+            "demand": 92.2705473283979,
+            "profit": 9867.226228890195,
+            "social_welfare": 6358.483328003248
+          },
+          "max_p": {
+            "optimal_price": 153.26490715648166,
+            "revenue": 14141.83686956465,
+            "demand": 92.2705473283979,
+            "profit": 9867.226228890195,
+            "social_welfare": 6358.483328003248
+          },
+          "max_d": {
+            "optimal_price": 38.605770064604954,
+            "revenue": 7097.584469458803,
+            "demand": 183.84776310850236,
+            "profit": -1419.5168938917614,
+            "social_welfare": 2129.27534083764
+          },
+          "max_b": {
+            "optimal_price": 38.605770064604954,
+            "revenue": 7097.584469458803,
+            "demand": 183.84776310850236,
+            "profit": -1419.5168938917614,
+            "social_welfare": 2129.27534083764
+          },
+          "max_s": {
+            "optimal_price": 153.26490715648166,
+            "revenue": 14141.83686956465,
+            "demand": 92.2705473283979,
+            "profit": 9867.226228890195,
+            "social_welfare": 6358.483328003248
+          }
+        },
+        "Leguna": {
+          "max_r": {
+            "optimal_price": 50.05256167653426,
+            "revenue": 5471.000755435848,
+            "demand": 109.30510991210213,
+            "profit": 3817.297756311662,
+            "social_welfare": 2459.883211197226
+          },
+          "max_p": {
+            "optimal_price": 50.05256167653426,
+            "revenue": 5471.000755435848,
+            "demand": 109.30510991210213,
+            "profit": 3817.297756311662,
+            "social_welfare": 2459.883211197226
+          },
+          "max_d": {
+            "optimal_price": 12.607698155298303,
+            "revenue": 2745.8165691154836,
+            "demand": 217.78888860545666,
+            "profit": -549.1633138230968,
+            "social_welfare": 823.744970734645
+          },
+          "max_b": {
+            "optimal_price": 12.607698155298303,
+            "revenue": 2745.8165691154836,
+            "demand": 217.78888860545666,
+            "profit": -549.1633138230968,
+            "social_welfare": 823.744970734645
+          },
+          "max_s": {
+            "optimal_price": 50.05256167653426,
+            "revenue": 5471.000755435848,
+            "demand": 109.30510991210213,
+            "profit": 3817.297756311662,
+            "social_welfare": 2459.883211197226
+          }
+        }
+      },
+      "mcda_analysis": {
+        "Bus": {
+          "individual_scores": {
+            "social_welfare": 0.8632956612013742,
+            "accessibility": 1.0,
+            "environmental_impact": 0.33333333333333337,
+            "cost_effectiveness": 0.7134042468781018,
+            "equity": 0.49074074074074076
+          },
+          "weighted_score": 0.7503678221558999,
+          "criteria_weights": {
+            "social_welfare": 0.35,
+            "accessibility": 0.25,
+            "environmental_impact": 0.2,
+            "cost_effectiveness": 0.15,
+            "equity": 0.05
+          }
+        },
+        "MRT": {
+          "individual_scores": {
+            "social_welfare": 1.0,
+            "accessibility": 0.6018518518518519,
+            "environmental_impact": 0.5833333333333334,
+            "cost_effectiveness": 0.0,
+            "equity": 0.5076923076923077
+          },
+          "weighted_score": 0.642514245014245,
+          "criteria_weights": {
+            "social_welfare": 0.35,
+            "accessibility": 0.25,
+            "environmental_impact": 0.2,
+            "cost_effectiveness": 0.15,
+            "equity": 0.05
+          }
+        },
+        "Leguna": {
+          "individual_scores": {
+            "social_welfare": 0.3868663459985358,
+            "accessibility": 0.7129629629629629,
+            "environmental_impact": 0.0,
+            "cost_effectiveness": 1.0,
+            "equity": 0.4805194805194805
+          },
+          "weighted_score": 0.4876699358662023,
+          "criteria_weights": {
+            "social_welfare": 0.35,
+            "accessibility": 0.25,
+            "environmental_impact": 0.2,
+            "cost_effectiveness": 0.15,
+            "equity": 0.05
+          }
+        }
+      }
+    },
+    "objective_3": {
+      "vot_analysis": {
+        "Low": {
+          "mean_vot": 1.0148210204337202,
+          "vot_per_hour": 60.889261226023216,
+          "median_vot": 0.8643107701287074,
+          "min_vot": 0.11052737521176284,
+          "max_vot": 4.6010004704653005
+        },
+        "Mid": {
+          "mean_vot": 1.8034941520303227,
+          "vot_per_hour": 108.20964912181937,
+          "median_vot": 1.4737403356303802,
+          "min_vot": 0.41318119274131226,
+          "max_vot": 13.460406407839706
+        },
+        "High": {
+          "mean_vot": 2.4153522231162827,
+          "vot_per_hour": 144.92113338697698,
+          "median_vot": 2.174695366665443,
+          "min_vot": 0.737295834255701,
+          "max_vot": 7.192133492905894
+        }
+      },
+      "generalized_cost_analysis": {
+        "Bus": {
+          "mean_gc": 111.40710327276044,
+          "min_gc": 32.66173645516332,
+          "max_gc": 238.8662374709674,
+          "std_gc": 35.73092062245007,
+          "median_gc": 107.46074337577355
+        },
+        "MRT": {
+          "mean_gc": 149.41766614476384,
+          "min_gc": 80.46837578071828,
+          "max_gc": 244.91761097308768,
+          "std_gc": 36.1204525977403,
+          "median_gc": 144.55411096503408
+        },
+        "Leguna": {
+          "mean_gc": 99.13734926205775,
+          "min_gc": 37.38176477655372,
+          "max_gc": 216.5772644952766,
+          "std_gc": 35.90737949080761,
+          "median_gc": 92.72085155238284
+        }
+      },
+      "policy_analysis": {
+        "current": {
+          "total_subsidy_cost": 0.0,
+          "accessibility_improvement": 0,
+          "cost_effectiveness": 0,
+          "subsidy_rates": {
+            "low_income_subsidy": 0.0,
+            "mid_income_subsidy": 0.0,
+            "high_income_subsidy": 0.0
+          }
+        },
+        "progressive_subsidy": {
+          "total_subsidy_cost": 3047.5329631601303,
+          "accessibility_improvement": 88,
+          "cost_effectiveness": 0.028875815639660435,
+          "subsidy_rates": {
+            "low_income_subsidy": 0.4,
+            "mid_income_subsidy": 0.2,
+            "high_income_subsidy": 0.0
+          }
+        },
+        "universal_subsidy": {
+          "total_subsidy_cost": 1702.0426889750768,
+          "accessibility_improvement": 51,
+          "cost_effectiveness": 0.029963995809476902,
+          "subsidy_rates": {
+            "low_income_subsidy": 0.2,
+            "mid_income_subsidy": 0.2,
+            "high_income_subsidy": 0.2
+          }
+        },
+        "targeted_subsidy": {
+          "total_subsidy_cost": 3586.806803639785,
+          "accessibility_improvement": 95,
+          "cost_effectiveness": 0.026485953997744408,
+          "subsidy_rates": {
+            "low_income_subsidy": 0.5,
+            "mid_income_subsidy": 0.1,
+            "high_income_subsidy": 0.0
+          }
+        },
+        "environmental_subsidy": {
+          "total_subsidy_cost": 2293.1172075004533,
+          "accessibility_improvement": 64,
+          "cost_effectiveness": 0.027909606971098247,
+          "subsidy_rates": {
+            "low_income_subsidy": 0.3,
+            "mid_income_subsidy": 0.15,
+            "high_income_subsidy": 0.05
+          }
+        }
+      }
+    }
+  }
+}
