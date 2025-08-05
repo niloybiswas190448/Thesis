@@ -1,0 +1,134 @@
+{
+  "objective_1": {
+    "mode_choice_analysis": {
+      "Low": {
+        "total_respondents": 246
+      },
+      "Mid": {
+        "total_respondents": 152
+      },
+      "High": {
+        "total_respondents": 102
+      }
+    },
+    "wtp_analysis": {
+      "Low": {
+        "mean_wtp": 48.13972604123447,
+        "median_wtp": 48.98192927450777,
+        "min_wtp": 10.0,
+        "max_wtp": 88.57992976242454
+      },
+      "Mid": {
+        "mean_wtp": 81.193859823098,
+        "median_wtp": 82.14339830519192,
+        "min_wtp": 21.71488020366118,
+        "max_wtp": 142.2582040208768
+      },
+      "High": {
+        "mean_wtp": 117.50531135038975,
+        "median_wtp": 117.56862105834769,
+        "min_wtp": 59.479836056327656,
+        "max_wtp": 207.54520665180277
+      }
+    },
+    "affordability_analysis": {
+      "Low": {
+        "mean_affordability_ratio": 1.0820062356539748,
+        "unaffordable_trips": 109,
+        "unaffordable_percentage": 44.3089430894309
+      },
+      "Mid": {
+        "mean_affordability_ratio": 0.5906814780445415,
+        "unaffordable_trips": 20,
+        "unaffordable_percentage": 13.157894736842104
+      },
+      "High": {
+        "mean_affordability_ratio": 0.4097615999458419,
+        "unaffordable_trips": 2,
+        "unaffordable_percentage": 1.9607843137254901
+      }
+    }
+  },
+  "objective_2": {
+    "welfare_results": {
+      "Bus": {
+        "base_demand": 216,
+        "base_price": 40.11727030772662
+      },
+      "MRT": {
+        "base_demand": 130,
+        "base_price": 77.21154012920991
+      },
+      "Leguna": {
+        "base_demand": 154,
+        "base_price": 25.215396310596606
+      }
+    },
+    "mcda_results": {
+      "Bus": {
+        "weighted_score": 0.8510019401875186
+      },
+      "MRT": {
+        "weighted_score": 0.9401851851851852
+      },
+      "Leguna": {
+        "weighted_score": 0.4411669295088543
+      }
+    }
+  },
+  "objective_3": {
+    "vot_analysis": {
+      "Low": {
+        "mean_vot": 1.0148210204337202,
+        "vot_per_hour": 60.889261226023216
+      },
+      "Mid": {
+        "mean_vot": 1.8034941520303227,
+        "vot_per_hour": 108.20964912181937
+      },
+      "High": {
+        "mean_vot": 2.4153522231162827,
+        "vot_per_hour": 144.92113338697698
+      }
+    },
+    "generalized_cost_analysis": {
+      "Bus": {
+        "mean_gc": 136.116858099454,
+        "min_gc": 35.19562526357803,
+        "max_gc": 320.1484402364311
+      },
+      "MRT": {
+        "mean_gc": 175.83186429803368,
+        "min_gc": 86.9485916345332,
+        "max_gc": 339.58226891848005
+      },
+      "Leguna": {
+        "mean_gc": 127.35006958720656,
+        "min_gc": 47.67527882660831,
+        "max_gc": 389.46163571256244
+      }
+    },
+    "policy_analysis": {
+      "current": {
+        "total_subsidy_cost": 0.0,
+        "accessibility_improvement": 0,
+        "cost_effectiveness": 0
+      },
+      "progressive_subsidy": {
+        "total_subsidy_cost": 4389.976186352117,
+        "accessibility_improvement": 64,
+        "cost_effectiveness": 0.014578666781603038
+      },
+      "universal_subsidy": {
+        "total_subsidy_cost": 4517.200327019624,
+        "accessibility_improvement": 51,
+        "cost_effectiveness": 0.011290178940026993
+      },
+      "targeted_subsidy": {
+        "total_subsidy_cost": 5185.8457513537405,
+        "accessibility_improvement": 80,
+        "cost_effectiveness": 0.015426606157561933
+      }
+    }
+  }
+}
